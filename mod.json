@@ -1,0 +1,43 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "gavin.clickassist",
+	"name": "Click Assist",
+	"version": "v1.0.0",
+	"developer": "Gavin",
+	"description": "Widens the timing window for frame-perfect clicks. Click up to a few frames early and the click is held, then fired on the exact frame it needs to land.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"window": {
+			"type": "int",
+			"name": "Early-click window (frames)",
+			"description": "How many frames early a click still counts. One frame is 1/240 s. A value of 4 turns a 1-frame window into a 5-frame window.",
+			"default": 4,
+			"min": 1,
+			"max": 24,
+			"control": {
+				"input": true,
+				"slider": true
+			}
+		},
+		"rings": {
+			"type": "bool",
+			"name": "Assist orbs and rings",
+			"default": true
+		},
+		"ground": {
+			"type": "bool",
+			"name": "Assist ground jumps",
+			"default": true
+		}
+	}
+}
